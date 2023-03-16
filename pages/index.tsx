@@ -11,12 +11,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="h-full flex  items-center justify-center p-5 bg-[#D6E2F0]">
-        <div className="p-4 text-center rounded-2xl bg-[#ffff] flex flex-col items-center justify-center gap-4">
-          <Image src={qrImage} alt="qr Image" className="rounded-2xl "></Image>
-          <h1 className="text-[#1F3251] text-2xl font-bold px-2">
+        <div className="p-5 max-w-[370px] text-center rounded-2xl bg-[#ffff] flex flex-col items-center justify-center">
+          <Image src={qrImage} alt="qr Image" className="rounded-2xl"></Image>
+          <h1 className="text-[#1F3251] text-2xl xl:text-[1.7rem] font-bold px-4 mt-6">
             Improve your front-end skills by building projects
           </h1>
-          <p className="text-[#7B879D] pb-10 px-6">
+          <p className="text-[#7B879D] pb-4 px-6 xl:text-[1.12rem] font-normal mt-3">
             Scan the QR code to visit Frontend Mentor and take your coding
             skills to the next level
           </p>
