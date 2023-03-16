@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-
+import qrImage from "public/image-qr-code.png";
 export default function Home() {
   return (
     <>
@@ -10,8 +10,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="text-red-500">placeholder for main</main>
-      <p>more test text</p>
+      <main className="h-full flex  items-center justify-center p-5 bg-[#D6E2F0]">
+        <div className="p-4 text-center rounded-2xl bg-[#ffff] flex flex-col items-center justify-center gap-4">
+          <Image src={qrImage} alt="qr Image" className="rounded-2xl "></Image>
+          <h1 className="text-[#1F3251] text-2xl font-bold px-2">
+            Improve your front-end skills by building projects
+          </h1>
+          <p className="text-[#7B879D] pb-10 px-6">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </main>
     </>
   );
 }
